@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85F1FF"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="114dp" >
+
+            <ImageView
+                android:id="@+id/cityImage"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/burut"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/cityContent"
+                android:fontFamily="@font/robotoblack"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="TextView" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_span="2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextClock
+                android:id="@+id/my_clock"
+                style="@style/ClockStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:format12Hour="h:mm:ss a"
+                android:textSize="32sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_span="2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/Mexico_button"
+                android:fontFamily="@font/robotoblack"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="187dp"
+                android:layout_height="50dp"
+                android:onClick="onClickMexico"
+                android:text="Time in Mexico" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_span="2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/Tunisia_button"
+                android:fontFamily="@font/robotoblack"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="187dp"
+                android:layout_height="50dp"
+                android:onClick="onClickTunisia"
+                android:text="Time in Tunisia" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_span="2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/thai_button"
+                android:fontFamily="@font/robotoblack"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="187dp"
+                android:layout_height="50dp"
+                android:onClick="onClickThai"
+                android:text="Time in Thai" />
+
+            <Button
+                android:id="@+id/japan_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="187dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/robotoblack"
+                android:onClick="onClickJapan"
+                android:text="Time in Japan" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
